@@ -1,9 +1,11 @@
-let n =5;
-let star='';
-for(i=1;i<=n;i++){
-    for(let j=1;j<=i;j++){
-    star+="*";
-    }
-    star +='\n';
+let n = 5; 
+for (let i = 1; i <= n; i++) { 
+	let str = "*"; 
+	let space = ' '; 
+	console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+} 
+for (let i = n - 1; i >= 1; i--) { 
+	let str = "*"; 
+	let space = ' '; 
+	console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
 }
-console.log(star);
